@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: 1s ease;
+}
+
+body{
+     background-image: linear-gradient(45deg, #8F9779, #C8C2B4); 
+    background-image: url("https://st2.depositphotos.com/1198682/46376/i/380/depositphotos_463760610-stock-photo-closeup-green-cardamom-pattern-texture.jpg");
+    background-attachment: fixed;
+     /* background-size: cover; 
+    perspective: 1500px;  */
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.box{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    background: none;
+    left: calc(50% - 175px); 
+    transform-style: preserve-3d;
+    transform: rotateY(-90deg);
+}
+
+.box div{
+    width: 350px;
+    height: 500px;
+    top: 20%;
+    position: absolute;
+    background-image: radial-gradient(#ffffff, #fdfdfd); 
+    box-shadow: 0 4px 27px rgba(0,0,0,.1);
+
+    /* box-shadow: 0px 0px 10px #B2A589, 0px 0px 5px #B2A589, inset 0px 0px 10px #B2A589, 
+     inset 0px 0px 5px #B2A589;  */
+    border: 3px solid #caba91;
+}
+.box div:nth-child(5){
+    height: 350px;
+     box-shadow: 0px 0px 10px #8D8A72, 0px 0px 30px #8D8A72;  
+}
+
+.a{transform: rotateY(90deg) translateZ(175px);}
+.b{transform: rotateY(180deg) translateZ(175px);}
+.c{transform: rotateY(270deg) translateZ(175px);}
+.d{transform: rotateY(360deg) translateZ(175px);}
+.e{transform: rotateY(0deg) translateZ(175px);}
+.a label{
+    position: relative;
+    width: 200px;
+    left: 65px;
+    top: 170px;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px 0px;
+    text-align: center;
+    display: block;
+    background-image: linear-gradient(45deg, #8F9779, #C2B280); 
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px #8D8A72, 0px 0px 30px #8D8A72; 
+    box-shadow: 0 4px 27px rgba(0,0,0,.1);
+
+    cursor: pointer;
+}
+
+#sup, #btn{
+    background-image: linear-gradient(45deg, #C2B280, #8F9779); 
+    color: white;
+    cursor: pointer;
+}
+
+#btn:focus{
+    width: calc(100% - 80px);
+    left: 40px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #666348;
+}
+
+.frm h6{
+    margin-top: 20px;
+}
+.frm input{
+    position: relative;
+    width: 260px;
+    left: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    top: 35px;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px #B2A589, 0px 0px 30px #B2A589;
+    margin: 20px 0px;
+    font-size: 16px;
+} 
+
+.frm input:focus{
+    width: calc(100% - 50px);
+    left: 20px;
+    background: #EDE8D3;
+    box-shadow: 0px 0px 5px #8F9779, 0px 0px 5px #8F9779;
+}
+#btm{
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    color: #4d4932;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+#chk1:checked ~ .box{transform: rotateY(-270deg);}
+#chk2:checked ~ .box{transform: rotateY(-180deg);}
